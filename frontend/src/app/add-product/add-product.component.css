@@ -1,0 +1,131 @@
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  color: #264D73;
+  font-size: 2.5rem;
+}
+h2, h3 {
+  color: #444;
+  font-weight: lighter;
+}
+h3 {
+  font-size: 1.3rem;
+}
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  background-image:url('../../assets/img/Farmers.jpg');
+
+}
+.left {
+  left: 0;
+  
+}
+.right {
+  right: 0;
+  font-size: 40px;
+  font-weight: 100px;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  body {
+    padding: 2rem;
+  }
+}
+body, input[text] {
+  color: #333;
+  font-family: Cambria, Georgia, serif;
+}
+a {
+  cursor: pointer;
+}
+button {
+  background-color: #eee;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: black;
+  font-size: 26px;
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 0rem;
+  width: 50%;
+}
+button:hover {
+  background-color: black;
+  color: rgba(239, 240, 245, 0.274);
+}
+button:disabled {
+  background-color: #eee;
+  color: rgb(219, 23, 23);
+  cursor: auto;
+}
+
+/* Navigation link styles */
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #e8e8e8;
+  color: #3d3d3d;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  color: white;
+  background-color:  #42545C;
+}
+nav a.active {
+  background-color: black;
+  color: white;
+}
+hr {
+  margin: 1.5rem 0;
+}
+input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: .5rem;
+}
+
+.ng-valid[required], .ng-valid.required  {
+  border-left: 5px solid #42A948; /* green */
+}
+
+.ng-invalid:not(form)  {
+  border-left: 5px solid #a94442; /* red */
+}
+
+.file-input {
+  display: none;
+}
+p{
+  font-weight: bold;
+  font-size: 35;
+  font-weight: 900;
+}
+.file-upload {
+  margin-top: 6%;
+}
+.add-product{
+  color: azure;
+  font-size: 17px;
+  margin-top: 10%;
+}

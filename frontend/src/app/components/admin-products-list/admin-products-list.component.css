@@ -1,0 +1,19 @@
+.product-wrapper {
+    width: 80%;
+    margin: 0 auto;  
+}
+.title {
+    margin: 20px 0px;
+    font-size: 24px;
+}
+.product-container-wrapper {
+    display: flex;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+  
+.item-wrapper, .order-num-wrapper, .price-per-wrapper, .quantity-wrapper, .total-price-wrapper, .farmer-wrapper {
+    flex: 1;
+}
+

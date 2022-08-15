@@ -1,0 +1,51 @@
+.badge.badge-outline.badge-dark {
+    border-color: #324148;
+    color: #324148;
+}
+.badge.badge-outline {
+    background: transparent;
+    border: 2px solid;
+}
+.login-wrapper {
+    background-image:url('../../assets/img/sunrise.jpeg');
+
+
+}
+.badge {
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 5px 7px;
+    font-size: 72%;
+    letter-spacing: 0.3px;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.card {
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.loading {
+    margin: 10% 0 0 50%;
+}
+
+
+
+@media all and (max-width: 480px) {
+    .btn-custom-class {
+        width: 100%;
+        display: block;
+    }
+    img {
+        width: 100%;
+    }
+    #profile-img-btn a {
+        width: 100%;
+    }
+}

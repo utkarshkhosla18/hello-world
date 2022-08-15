@@ -1,0 +1,36 @@
+<div class="product-wrapper">
+    <div class="title">Products List</div>
+    <div>
+        <div *ngFor="let product of products">
+            <div class="product-container-wrapper">
+                <div class="item-wrapper">
+                    <div>Item:</div>
+                    <div>{{product.item}}</div>
+                </div>
+                <div class="order-num-wrapper">
+                    <div>Order number:</div>
+                    <div>{{product.orderno}}</div>
+                </div>
+                <div class="price-per-wrapper">
+                    <div>Price per unit:</div>
+                    <div>{{product.ppu}}</div>
+                </div>
+                <div class="quantity-wrapper">
+                    <div>Quantity:</div>
+                    <div>{{product.quantity}}</div>
+                </div>
+                <div class="total-price-wrapper">
+                    <div>Total price:</div>
+                    <div>{{product.price}}</div>
+                </div>
+                <div class="farmer-wrapper">
+                    <div>Farmer:</div>
+                    <div>{{product.farmer}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,74 @@
+<!-- <div class="cart-container">
+  <div class="container mt-5 mb-5">
+  <div class="row"> -->
+    <!-- <div class="col-lg-4" *ngFor="let fd of foodData">
+      <div class="foodbox mt-3 mb-3">
+        <img src="{{fd.foodImg}}">
+        <h1>{{fd.foodName}}</h1>
+        <p>{{fd.foodDetails}}</p>
+        <p>{{fd.foodQuantity}}</p>
+        <p>{{fd.foodPrice | currency:'GBP'}}</p>
+
+        <br/>
+      </div>
+    </div> -->
+  <!-- </div>
+    <div class="col-lg-2 col-12 checkout-col">
+      <div class="checkout-container"> -->
+        <!-- <div class="checkout-subtotal">
+          <span>Subtotal: </span><span class="cart-product-price">${{cartTotal}}</span>
+        </div>
+        <button [routerLink]="['/user/checkout']" type="button" class="btn btn-lg" [disabled]="buttonDisabled || cartContent.length === 0">Proceed to Checkout</button>-->
+        <!-- <a routerLink="checkout" class="checkoutbtn">
+          <i class="material-icons">shopping_cart</i>
+          Check Out
+        </a>
+      </div>
+    </div>
+  </div>
+</div> -->
+<div class="container mt-2">
+  <div *ngIf="(total_price) === 0" >
+      <p> There are no items in your basket! Add few.</p >
+  </div>
+<div>
+<div class="container mt-2">
+  <!-- <div *ngIf="(cart$ | async) === null || (cart$ | async).items.length === 0" >
+      <p> There are no items in your basket! Add few.</p>
+  </div> -->
+  
+  <!-- <div *ngIf="(cart$ | async) !== null" >
+  <div *ngIf="(cart$ | async) as cart"> -->
+<div>
+  <div>
+      <div class="pb-5">
+          <div class="container">
+              <div class="row">
+                  <div class="col-12 py-5 mb-1">
+                   <!-- <app-basket-summary
+                      (decrement)="decrementItem($event)"
+                      (increment)="incrementItem($event)"
+                      (remove)="removeCartItem($event)"
+                      [items]="(cart$ |async).items"
+                   ></app-basket-summary> -->
+                  </div>
+              </div>
+              <div class="col-lg-4" *ngFor="let cart of cartList">
+                <div class="productbox mt-3 mb-3" >
+                  <h1>Product name: {{cart.product.name}}</h1>
+                  <p>Description: {{cart.product.description}}</p>
+                  <p>Category: {{cart.product.category_name}}</p>
+                  <p>Price: {{cart.product.price | currency:'GBP'}}</p>
+                  <p>Farmer name: {{cart.product.farmer_name}}</p>
+                  <p>Quantity: {{cart.cart.quantity}}</p>
+                  <button mat-flat-button color="primary" (click)="deleteCart(cart.cart.id)">Delete this cart</button>
+                  <br/>
+                </div>
+              </div>
+              <a class="buybtn" [routerLink]="['/checkout']"> Check Out&nbsp;<i class="bi bi-bag"></i></a>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+

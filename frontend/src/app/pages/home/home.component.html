@@ -1,0 +1,21 @@
+<div class = "banner">
+  <div class = "text">
+    <h2>Fresh Food <br/> Fresh Life</h2>
+    <a routerLink="/product-list">Explore now<i class = "bi bi-arrow-right"></i></a>
+  </div>
+</div>
+
+
+<div class="container mt-4 mb-4">
+  <h1 class="text-center">Customers <span class="highlight">Favourite Product</span></h1>
+  <div class="row">
+      <div class="col-lg-3 mt-3" *ngFor="let product of productData;index as i">
+          <div class="productbox" *ngIf="i<=3">
+            <img src="http://127.0.0.1:8000{{product.image}}" />
+            <h1>{{product.name}}</h1>
+            <p>{{product.price | currency:'GBP'}}</p>
+          </div>
+      </div>
+  </div>
+  <a routerLink="/product-list" class="viewmorebtn">view more <i class="bi bi-arrow-right"></i></a>
+

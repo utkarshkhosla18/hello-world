@@ -1,0 +1,44 @@
+/* product update wrapper */
+
+.product-update-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+}
+
+.product-update-inwrapper {
+    flex: 1;
+}
+
+.product-update-container {
+    display: inline-block;
+    border: 2px solid black;
+}
+
+.image {
+    width: 240px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-wrapper, .storage-wrapper {
+    display: flex;
+    padding: 5px 10px;
+    border-top: 1px solid black;
+}
+
+.price-title, .storage-title, .input-wrapper {
+    flex: 1;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    width: 50px;
+}

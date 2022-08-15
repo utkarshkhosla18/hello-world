@@ -1,0 +1,47 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+  <mat-card class="box">
+    <mat-card-header>
+      <mat-card-title>Your Profile</mat-card-title>
+    </mat-card-header>
+    <form #f="ngForm"  class="Profile-form">
+      <mat-card-content>
+        <mat-form-field appearance="fill">
+          <mat-label>Name</mat-label>
+          <input matInput id="exampleInputEmail1" placeholder="Enter Name" [(ngModel)]="profileName" [ngModelOptions]="{standalone: true}" >
+
+        </mat-form-field>
+
+
+        <mat-form-field appearance="fill">
+          <mat-label>Mobile Number</mat-label>
+
+          <input matInput id=" mobile" placeholder="Mobile Number"[(ngModel)]="profileMobileNo" [ngModelOptions]="{standalone: true}">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="Enter Email" [(ngModel)]="profileEmail" [ngModelOptions]="{standalone: true}">
+        </mat-form-field>
+        <button type="submit" (click)="changePassword()" class="btn btn-primary">Change Password</button>
+        <div *ngIf="changePasswordClicked">
+
+
+          <mat-form-field appearance="fill">
+            <mat-label>Enter New Password</mat-label>
+
+            <input matInput id=" newPassword" type="password" placeholder="Enter new password"[(ngModel)]="profileNewPassword" [ngModelOptions]="{standalone: true}">
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Confirm Password</mat-label>
+
+            <input matInput id="newPassword" type="password" placeholder="Enter new password" [(ngModel)]="profileConfirmPassword"  [ngModelOptions]="{standalone: true}">
+          </mat-form-field>
+        </div>
+        <button type="submit" (click)="saveChanges()" class="btn btn-primary" style="margin-top: 5%;">Save Changes</button>
+      </mat-card-content>
+
+
+    </form>
+  </mat-card>
+
+</div>

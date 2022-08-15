@@ -1,0 +1,23 @@
+<div class="dashboard-wrapper">
+    <div class="title">User Management</div>
+    <div>
+        <div *ngFor="let admin of admins">
+            <div class="admin-container-wrapper">
+                <div class="username-wrapper">
+                    <div>Username:</div>
+                    <div>{{admin.username}}</div>
+                </div>
+                <div class="password-wrapper">
+                    <div>Password:</div>
+                    <div>{{admin.password}}</div>
+                </div>
+                <div class="email-wrapper">
+                    <div>E-mail:</div>
+                    <div>{{admin.email}}admin</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

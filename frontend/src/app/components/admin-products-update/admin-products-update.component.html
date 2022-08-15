@@ -1,0 +1,18 @@
+<div class="product-update-wrapper">
+    <div class="product-update-inwrapper" *ngFor="let product of products">
+        <div class="product-update-container">
+            <div class="image">
+                <!-- <img src={{product.image}} /> -->
+                Image
+            </div>
+            <div class="price-wrapper">
+                <div class="price-title">Price Setting:</div>
+                <div class="input-wrapper"><input type="number" min="0" value={{product.price}}/></div>
+            </div>
+            <div class="storage-wrapper">
+                <div class="storage-title">Storage Setting:</div>
+                <div class="input-wrapper"><input type="number" min="0" value={{product.storage}}/></div>
+            </div>
+        </div>
+    </div>
+</div>
